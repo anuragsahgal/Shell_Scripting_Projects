@@ -4,6 +4,7 @@
 
 #A connectivity checker script that pings multiple servers or IPs.
 
+echo "Hello $(whoami)"
 read -p read -p "Which Site/IP you want to check? " site 
 ping -c 1 $site > /dev/null 
 
@@ -13,5 +14,7 @@ echo "Successfully connected to $site"
 else
 echo "Unable to connect $site"
 fi
+
+echo "Thanks!!"
 
 #Script completed
